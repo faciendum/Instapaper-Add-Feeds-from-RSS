@@ -7,9 +7,12 @@ Thats why this is a prototype which i coded this evening.  - i would like to add
 
 If you want to import articles from any rss you like, i hope you enjoy this little script.
 
-# How to use it
+
+
+Run
+---
+
+    ruby rsstoinsta.rb "https://yourfavoriterss.com/feed" "username" "password"
+
 
 execute the rubyscript with the following parameters: uri to your RSS, Instapaper Username, Instapaper Password
-
-for example: ruby rsstoinsta.rb "https://yourfavoriterss.com/feed" "username" "password"
-
