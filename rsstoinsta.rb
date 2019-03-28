@@ -1,4 +1,3 @@
-#rss import to instapaper
 #coded with love. faciendum.
 
 class RssToInstapaper
@@ -10,13 +9,12 @@ class RssToInstapaper
   @instapaperAddUrl = URI('https://www.instapaper.com/api/add')
 
   def self.sendFeedToInstapaper(url, user, password)
-
     unless url.nil? || url == ""
       begin
-        puts "Validating rss..."
+        puts "Validate RSS..."
         open(url) do |rss|
           feed = RSS::Parser.parse(rss)
-          puts "Found #{feed.channel.title} with #{feed.items.count} articles!"
+          puts "Found #{feed.channel.title} with #{feed.items.count} articles"
           puts ""
           puts "Authenticate instapaper login..."
 
@@ -27,9 +25,9 @@ class RssToInstapaper
             response = http.request request
 
             if(response.body == "200")
-              puts "Login worked!"
+              puts "Login worked"
               puts "-------------"
-              puts "Going to add those articles to your instapaper:"
+              puts "The following items will be added to your Instapaper account:"
               feed.items.each do |item|
                 puts "Article: #{item.title}"
                 #lets do the magic!

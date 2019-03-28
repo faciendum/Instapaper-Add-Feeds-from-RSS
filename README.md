@@ -1,18 +1,15 @@
 # RSS-To-Instapaper
-I recently found an app which i actually really like. The app is called "Instapaper" within you're able to manage your favorite web articles and read them like a newspaper with as less fancy things around them as possible.
+With this little Ruby script it is possible to transfer articles from an RSS feed to your Instapaper account. I noticed that there is no way to do this within the app, so I wrote this simple script.
+I've never done anything more than toying around with ruby, so this was actually really fun.
 
-I've noticed that there is no option to import articles from a RSS feed to your Instapaper Account so i decided to take this idea and start coding a small ruby script to get the thing done. I've never done anything more than toying around with ruby, so this is actually my first viable ruby script.
-
-Thats why this is a prototype which i coded this evening.  - i would like to add some more features this year, for example assigning the articles to your personal folders, adding descriptions, ...
-
-If you want to import articles from any rss you like, i hope you enjoy this little script.
-
+# Upcoming?
+- Assign articles to specific personal folder
+- Add descriptions
 
 
 Run
 ---
 
-    ruby rsstoinsta.rb "https://yourfavoriterss.com/feed" "username" "password"
+    ruby rsstoinsta.rb "https://favoriteRSSfeed.com/feed" "username" "password"
 
-
-execute the rubyscript with the following parameters: uri to your RSS, Instapaper Username, Instapaper Password
+To run the script, execute with the following parameters: uri to your RSS, Your Instapaper Username, Your Instapaper Password
